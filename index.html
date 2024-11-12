@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Preview</title>
+</head>
+<style>
+    .contpar{
+        margin: 0;
+        padding: 0;
+        width: 400px;
+        height: 450px;
+        border: 2px solid black;
+        display: block;
+        margin: 20px auto;
+        background-color: #ebe2e2;
+        border: solid black 3px;
+    }
+    .contpar:hover{
+        box-shadow: 0px 0px 2px 5px rgb(177, 177, 177);
+
+    }
+    .imgchild{
+        margin: 0;
+        padding: 0;
+        width: 350px;
+        height: 400px;
+        object-fit: cover;
+        background-color: #AABFD9;
+        display: block;
+        margin:0px auto;
+        margin-top: 30px;
+        
+    }
+    
+    .contpar1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        
+        
+    }
+    .imgchildinner{
+        border: 2px solid black;
+        height: 160px;
+        margin-left: 10px;
+        width: 130px;
+        border: solid black 3px;
+
+    }
+    .imgchildinner:hover{
+        box-shadow: 0px 0px 2px 5px rgb(177, 177, 177);
+    }
+    .heading{
+        text-align: center;
+        font-size: xxx-large;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(228, 213, 10);
+    }
+</style>
+<body>
+    <h1 class="heading">Assignment31..</h1>
+    <div class="contpar">
+            <img src="https://m.media-amazon.com/images/I/61xJlx-3KDL._AC_UY218_.jpg"alt="img1" class="imgchild" id="primaryimg"/>
+    </div>
+
+    <div class="contpar1">
+        <img src="https://m.media-amazon.com/images/I/61xJlx-3KDL._SX679_.jpg"alt="img1" class="imgchildinner" onclick="clickimg('https://m.media-amazon.com/images/I/61xJlx-3KDL._SX679_.jpg')"/>
+        <img src="https://m.media-amazon.com/images/I/51QCWXxh8GL._SX679_.jpg"alt="img2" class="imgchildinner" onclick="clickimg('https://m.media-amazon.com/images/I/51QCWXxh8GL._SX679_.jpg')"/>
+        <img src="https://m.media-amazon.com/images/I/71Af7pkaMiL._SX679_.jpg"alt="img3" class="imgchildinner" onclick="clickimg('https://m.media-amazon.com/images/I/71Af7pkaMiL._SX679_.jpg')"/>
+        <img src="https://m.media-amazon.com/images/I/71ta3jyFvIL._SX679_.jpg"alt="img4" class="imgchildinner" onclick="clickimg('https://m.media-amazon.com/images/I/71ta3jyFvIL._SX679_.jpg')"/>
+        <img src="https://m.media-amazon.com/images/I/81beCYJnypL._SX679_.jpg"alt="img5" class="imgchildinner" onclick="clickimg('https://m.media-amazon.com/images/I/81beCYJnypL._SX679_.jpg')"/>
+        <img src="https://m.media-amazon.com/images/I/61S7hQeXJlL._SX679_.jpg"alt="img6" class="imgchildinner" onclick="clickimg('https://m.media-amazon.com/images/I/61S7hQeXJlL._SX679_.jpg')"/>
+
+    </div>
+
+    <script>
+           
+            function clickimg(source){
+            const outputelement=document.getElementById("primaryimg");
+            outputelement.src=source;
+                 
+            }
+    </script>
+</body>
+</html>
